@@ -1,4 +1,4 @@
-# 1.E-Learning Platform (Setup Phase)
+## 1.E-Learning Platform (Setup Phase)
 
 This project is an **E-Learning Dashboard** built using **React + Vite**.  
 The current phase focuses on setting up the project structure and installing essential dependencies for future development.
