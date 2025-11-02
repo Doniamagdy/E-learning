@@ -16,6 +16,10 @@ import AllStudents from "./pages/admin/student/AllStudents";
 import AddInstructor from "./pages/admin/instructor/AddInstructor";
 import EditInstructor from "./pages/admin/instructor/EditInstructor";
 import AllInstructors from "./pages/admin/instructor/AllInstructors";
+// Courses
+import AddCourse from "./pages/admin/course/AddCourse";
+import EditCourse from "./pages/admin/course/EditCourse";
+import AllCourses from "./pages/admin/course/AllCourses";
 
 
 function App() {
@@ -43,6 +47,11 @@ function App() {
         <Route path="/add-instructor" element={<AddInstructor />} />
         <Route path="/edit-instructor" element={<EditInstructor />} />
         <Route path="/all-instructors" element={<AllInstructors />} />
+
+        {/* Course Routes */}
+        <Route path="/add-course" element={<AddCourse />} />
+        <Route path="/edit-course" element={<EditCourse />} />
+        <Route path="/all-courses" element={<AllCourses />} />
       </Routes>
 
       {/* User Routes */}
