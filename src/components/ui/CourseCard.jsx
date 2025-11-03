@@ -1,8 +1,14 @@
 import React from "react";
 import { FaUserGraduate, FaBookOpen } from "react-icons/fa";
+import { RiDeleteBinFill } from "react-icons/ri";
+import { GrUpdate } from "react-icons/gr";
+import useDelete from "../../hooks/useDelete";
+
+
 
 
 function CourseCard({
+  id,
   cardImage,
   cardButton,
   cardTitle,
@@ -12,7 +18,12 @@ function CourseCard({
   studentNumber,
   lessons,
   percentageOfCompletion,
-}) {
+}) { 
+
+const{deleteFn}=useDelete()
+
+
+
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden border border-gray-100 max-w-sm my-5">
       <img src={cardImage} alt={cardTitle} className="w-full h-48 object-cover" />
@@ -33,6 +44,11 @@ function CourseCard({
         </div>
         
       <p className="ms-3 my-4">{percentageOfCompletion}</p>
+      <div className="flex justify-end">
+     <button type="button" onClick={() => deleteFn(id)}><RiDeleteBinFill className="text-red-500 me-6 mb-4"    /> </button> 
+      <GrUpdate className="text-amber-500 me-6 mb-4" />
+
+      </div>
     </div>
   );
 }

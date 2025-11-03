@@ -85,7 +85,7 @@ function AllCourses() {
 
         {/* Part 2 */}
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between ">
           <SearchBar
             type={"text"}
             placeholder={"Search courses..."}
@@ -99,7 +99,8 @@ function AllCourses() {
         <div className="flex justify-around flex-wrap">
           {courses?.map((course) => (
             <CourseCard
-              key={course.id}
+              key={course._id}
+              id={course._id}
               cardImage={frontendImage}
               cardButton={"active"}
               cardTitle={course.title}

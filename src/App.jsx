@@ -31,10 +31,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPass />} />
         <Route path="/change-password" element={<ChangePass />} />
-      </Routes>
+     
 
       {/* Admin Routes  */}
-      <Routes>
+     
         <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Students Routes */}
@@ -52,10 +52,10 @@ function App() {
         <Route path="/add-course" element={<AddCourse />} />
         <Route path="/edit-course" element={<EditCourse />} />
         <Route path="/all-courses" element={<AllCourses />} />
-      </Routes>
+     
 
       {/* User Routes */}
-      <Routes>
+     
         <Route path="/home" element={<Home />} />
       </Routes>
     </>
