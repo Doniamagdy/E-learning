@@ -3,6 +3,8 @@ import { FaUserGraduate, FaBookOpen } from "react-icons/fa";
 import { RiDeleteBinFill } from "react-icons/ri";
 import { GrUpdate } from "react-icons/gr";
 import useDelete from "../../hooks/useDelete";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -46,7 +48,9 @@ const{deleteFn}=useDelete()
       <p className="ms-3 my-4">{percentageOfCompletion}</p>
       <div className="flex justify-end">
      <button type="button" onClick={() => deleteFn(id)}><RiDeleteBinFill className="text-red-500 me-6 mb-4"    /> </button> 
-      <GrUpdate className="text-amber-500 me-6 mb-4" />
+
+     <Link to={`/edit-course/${id}`}><GrUpdate className="text-amber-500 me-6 mb-4" /> </Link>
+      
 
       </div>
     </div>

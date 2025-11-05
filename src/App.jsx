@@ -50,7 +50,7 @@ function App() {
 
         {/* Course Routes */}
         <Route path="/add-course" element={<AddCourse />} />
-        <Route path="/edit-course" element={<EditCourse />} />
+        <Route path="/edit-course/:id" element={<EditCourse />} />
         <Route path="/all-courses" element={<AllCourses />} />
      
 
